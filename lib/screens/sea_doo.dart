@@ -227,10 +227,12 @@ class _SeaDooScreenState extends State<SeaDooScreen> {
           Padding(
             padding: const EdgeInsets.all(14.0),
             child: CupertinoSearchTextField(
+              backgroundColor: Colors.white,
               controller: controller,
               onChanged: (value) {},
               onSubmitted: (value) {},
               autocorrect: true,
+              autofocus: true,
             ),
           ),
           Padding(
