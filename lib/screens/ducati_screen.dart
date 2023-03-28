@@ -209,7 +209,7 @@ class _DucatiScreenState extends State<DucatiScreen> {
                 onChanged: (value) {},
                 onSubmitted: (value) {},
                 autocorrect: true,
-                autofocus: true,
+                placeholder: 'Search',
               ),
             ),
             Padding(

@@ -167,7 +167,7 @@ class _CanAmScreenState extends State<CanAmScreen> {
               onChanged: (value) {},
               onSubmitted: (value) {},
               autocorrect: true,
-              autofocus: true,
+              placeholder: 'Search',
 
             ),
           ),
