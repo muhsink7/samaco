@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:samaco/screens/initial_screen.dart';
+import 'package:samaco/constants/image_constants.dart';
+import 'package:samaco/ui/screens/initial_screen.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:page_transition/page_transition.dart';
 
@@ -26,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     // print("animateState : $animateState  ${getAnimatedPadding(animateState)}");
     return AnimatedSplashScreen(
-      splash: Image.asset('assets/images/samacologo.png'),
+      splash: Image.asset(AppImages.logo),
       nextScreen: const InitialScreen(),
       splashTransition: SplashTransition.fadeTransition,
       pageTransitionType: PageTransitionType.rightToLeftWithFade,

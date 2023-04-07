@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:samaco/constants/image_constants.dart';
 import 'package:samaco/models/reusable_card.dart';
 
 
@@ -19,7 +20,7 @@ class _CanAmScreenState extends State<CanAmScreen> {
       appBar: AppBar(
         backgroundColor: Colors.blueGrey[900],
         centerTitle: true,
-        title:  Text('CAN-AM'),
+        title:  const Text('CAN-AM'),
       ),
       body: Stack(
         children: [
@@ -34,17 +35,17 @@ class _CanAmScreenState extends State<CanAmScreen> {
                       cardChild: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          SizedBox(
+                          const SizedBox(
                               height: 150,
                               width: 150,
-                              child: Image(image: AssetImage('assets/images/can-am/maveric.jpg'))),
+                              child: Image(image: AssetImage(AppImages.canamMaveric))),
                           Column(
-                            children: [
+                            children: const [
                               Text('Can-Am Maverick X3'),
                               Text('2023,2022,2021...'),
                             ],
                           ),
-                          Icon(Icons.arrow_forward_ios),
+                          const Icon(Icons.arrow_forward_ios),
                         ],
                       ),
                       onPress: () {}),
@@ -56,17 +57,16 @@ class _CanAmScreenState extends State<CanAmScreen> {
                       cardChild: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          SizedBox(
+                          const SizedBox(
                               height: 150,
                               width: 150,
-                              child: Image(image: AssetImage('assets/images/can-am/maveric max.jpg'))),
+                              child: Image(image: AssetImage(AppImages.canamMavericMax))),
                           Column(
-                            children: [
+                            children: const [
                               Text('Can-Am Maverick Max'),
-                              // Text('2023,2022,2021...'),
                             ],
                           ),
-                          Icon(Icons.arrow_forward_ios),
+                          const Icon(Icons.arrow_forward_ios),
                         ],
                       ),
                       onPress: () {}),
@@ -78,17 +78,16 @@ class _CanAmScreenState extends State<CanAmScreen> {
                       cardChild: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          SizedBox(
+                          const SizedBox(
                               height: 150,
                               width: 150,
-                              child: Image(image: AssetImage('assets/images/can-am/OUTLANDER.jpg'))),
+                              child: Image(image: AssetImage(AppImages.canamOutlander))),
                           Column(
-                            children: [
+                            children: const [
                               Text('Can-Am Outander'),
-                              // Text('2023,2022,2021...'),
                             ],
                           ),
-                          Icon(Icons.arrow_forward_ios),
+                          const Icon(Icons.arrow_forward_ios),
                         ],
                       ),
                       onPress: () {}),
@@ -100,17 +99,16 @@ class _CanAmScreenState extends State<CanAmScreen> {
                       cardChild: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          SizedBox(
+                          const SizedBox(
                               height: 150,
                               width: 150,
-                              child: Image(image: AssetImage('assets/images/can-am/TRAXTER MAX.jpg'))),
+                              child: Image(image: AssetImage(AppImages.canamTraxterMax))),
                           Column(
-                            children: [
+                            children: const [
                               Text('Can-Am Traxter Max'),
-                              // Text('2023,2022,2021...'),
                             ],
                           ),
-                          Icon(Icons.arrow_forward_ios),
+                          const Icon(Icons.arrow_forward_ios),
                         ],
                       ),
                       onPress: () {}),
@@ -122,17 +120,16 @@ class _CanAmScreenState extends State<CanAmScreen> {
                       cardChild: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          SizedBox(
+                          const SizedBox(
                               height: 150,
                               width: 150,
-                              child: Image(image: AssetImage('assets/images/can-am/traxter.jpg'))),
+                              child: Image(image: AssetImage(AppImages.canamTraxter))),
                           Column(
-                            children: [
+                            children: const [
                               Text('Can-Am Traxter'),
-                              // Text('2023,2022,2021...'),
                             ],
                           ),
-                          Icon(Icons.arrow_forward_ios),
+                          const Icon(Icons.arrow_forward_ios),
                         ],
                       ),
                       onPress: () {}),
@@ -193,7 +190,7 @@ class _CanAmScreenState extends State<CanAmScreen> {
                   ),
                   onPressed: () {
                     setState(() {
-                      SnackBar snackBar = SnackBar(
+                      SnackBar snackBar = const SnackBar(
                         content: Text('This feature is not available yet!!',
                           textAlign: TextAlign.center,
                         ),

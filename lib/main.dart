@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:samaco/screens/brand_screen.dart';
-import 'package:samaco/screens/ducati_screen.dart';
-import 'package:samaco/screens/sea_doo.dart';
-import 'package:samaco/screens/splash_screen.dart';
-import 'package:samaco/screens/initial_screen.dart';
-import 'package:samaco/screens/can_am_screen.dart';
-import 'package:samaco/screens/vehicle_enquiry_screen.dart';
+import 'package:samaco/ui/screens/brand_screen.dart';
+import 'package:samaco/ui/screens/ducati_screen.dart';
+import 'package:samaco/ui/screens/sea_doo.dart';
+import 'package:samaco/ui/screens/splash_screen.dart';
+import 'package:samaco/ui/screens/initial_screen.dart';
+import 'package:samaco/ui/screens/can_am_screen.dart';
+import 'package:samaco/ui/screens/vehicle_enquiry_screen.dart';
 
 void main() {
   runApp(const Samaco());
